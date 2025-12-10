@@ -9,13 +9,13 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   /* Custom Sidebar Colors */
-<<<<<<< HEAD
-  --custom-sidebar-bg-light: #808080; /* Grey */
-  --custom-text-black-light: #000000; /* Dark Black for topics */
-  --custom-subheading-color: #34495e; /* Lighter Blue-Grey for sub-headings */
-  --custom-link-hover-color: #e74c3c; /* Coral for hover */
-  --custom-link-active-color: #c0392b; /* Darker Coral for active */
-  --custom-subheading-color-rgb: 52, 73, 94; /* RGB for blue-grey for rgba usage */
+  --custom-sidebar-bg-light: #87CEEB; /* Sky Blue */
+  --custom-text-black-light: #FFD700; /* Gold for topics */
+  --custom-subheading-color: #FFD700; /* Gold for sub-headings */
+  --custom-subheading-color-rgb: 255, 215, 0; /* RGB for gold for rgba usage */
+  --custom-subheading-color-darker: #333333; /* Darker blue for border */
+  --custom-link-hover-color: #FFD700; /* Using Gold for hover */
+  --custom-link-active-color: #87CEEB; /* Using Sky Blue for active */
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -23,23 +23,15 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-=======
-  --custom-sidebar-bg-light: #87CEEB; /* Sky Blue */
-  --custom-text-black-light: #FFD700; /* Gold for topics */
-  --custom-subheading-color: #FFD700; /* Gold for sub-headings */
-  --custom-subheading-color-rgb: 255, 215, 0; /* RGB for gold for rgba usage */
-  --custom-subheading-color-darker: #333333; /* Darker blue for border */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
 }
 
 [data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   /* Custom Sidebar Colors for Dark Mode */
-<<<<<<< HEAD
-  --custom-sidebar-bg-dark: #808080; /* Grey */
-  --custom-text-black-dark: #000000; /* Dark Black for topics */
-  --custom-subheading-color: #34495e; /* Lighter Blue-Grey for sub-headings */
+  --custom-sidebar-bg-dark: #87CEEB; /* Sky Blue */
+  --custom-text-black-dark: #FFD700; /* Gold for topics in dark mode */
+  --custom-subheading-color: #FFD700; /* Gold for dark mode sub-headings */
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -69,11 +61,6 @@
 .navbar__link,
 .navbar__brand {
   color: #FFFFFF; /* White */
-=======
-  --custom-sidebar-bg-dark: #87CEEB; /* Sky Blue */
-  --custom-text-black-dark: #FFD700; /* Gold for topics in dark mode */
-  --custom-subheading-color: #FFD700; /* Gold for dark mode sub-headings */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
 }
 
 /*
@@ -82,27 +69,16 @@
  * ============================================================================
  */
 
-<<<<<<< HEAD
-/* Left Sidebar container */
-.menu {
-  padding: 0.5rem;
-  background-color: var(--custom-sidebar-bg-light);
-=======
 /* Sidebar container */
 .menu {
   padding: 0.5rem;
   background-color: var(--custom-sidebar-bg-light); /* Grey background */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
   border-right: 1px solid var(--ifm-toc-border-color);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] .menu {
-<<<<<<< HEAD
-  background-color: var(--custom-sidebar-bg-dark);
-=======
   background-color: var(--custom-sidebar-bg-dark); /* Dark grey background */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
   box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -113,87 +89,54 @@
   font-weight: 500;
   padding-left: 1rem;
   margin-bottom: 0.1rem;
-<<<<<<< HEAD
-=======
   color: inherit;
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
 }
 
 /* Main topics (top-level links) */
 .menu__list > .menu__list-item > .menu__link {
-<<<<<<< HEAD
-  color: var(--custom-text-black-light);
+  color: var(--custom-text-black-light); /* Black for main topics */
   font-size: 1.1rem; /* Increased font size */
   font-weight: 700;
-=======
-  color: var(--custom-text-black-light); /* Black for main topics */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
 }
 
 [data-theme='dark'] .menu__list > .menu__list-item > .menu__link {
   color: var(--custom-text-black-dark);
 }
 
-<<<<<<< HEAD
-/* Sub-headings (nested links) */
-.menu__list-item .menu__list-item > .menu__link {
-  color: var(--custom-subheading-color);
-  font-size: 1rem;
-=======
-
 /* Sub-headings (nested links) */
 .menu__list-item .menu__list-item > .menu__link {
   color: var(--custom-subheading-color); /* Deep Blue for sub-headings */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
+  font-size: 1rem;
 }
 
 /* Hover effect for all links */
 .menu__link:hover {
-<<<<<<< HEAD
   background-color: rgba(var(--custom-subheading-color-rgb), 0.1);
   color: var(--custom-link-hover-color);
 }
 
 /* Active link styling */
 .menu__link--active {
-  color: white;
-  background-color: var(--custom-link-active-color);
-  border-left: 4px solid var(--custom-link-active-color);
-=======
-  background-color: rgba(var(--custom-subheading-color-rgb), 0.1); /* Light blue tint on hover */
-}
-
-
-/* Active link styling */
-.menu__link--active {
   color: white; /* White text for active link */
-  background-color: var(--custom-subheading-color); /* Deep Blue background */
+  background-color: var(--custom-link-active-color); /* Now defined as Sky Blue */
   border-left: 4px solid var(--custom-subheading-color-darker); /* Darker blue border */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
   font-weight: 700;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-<<<<<<< HEAD
-.menu__list-item--collapsed .menu__link--active {
-    background-color: transparent;
-    color: var(--custom-link-active-color);
-=======
 /* Don't apply the same background to active category parents */
 .menu__list-item--collapsed .menu__link--active {
     background-color: transparent;
     color: var(--custom-subheading-color); /* Show blue for active collapsed parent */
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
     box-shadow: none;
     border-left-color: transparent;
 }
 
-
 [data-theme='dark'] .menu__link--active {
-<<<<<<< HEAD
-  color: white;
-  background-color: var(--custom-link-active-color);
-  border-left-color: var(--custom-link-active-color);
+  color: #e9ecef; /* Lighter color for dark theme active link */
+  background-color: var(--custom-subheading-color);
+  border-left-color: var(--custom-subheading-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 /*
@@ -271,10 +214,3 @@
 .buttons .button {
   margin-top: 1rem;
 }
-=======
-  color: #e9ecef;
-  background-color: var(--custom-subheading-color);
-  border-left-color: var(--custom-subheading-color);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-}
->>>>>>> 8e81d8c (feat: Update sidebar background to sky blue and headings to gold)
